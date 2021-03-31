@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>EATEVERYWHERE</title>
+    <meta charset="utf-8">
+
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- My Javascript -->
+    <script src="js/User_FE.js" rel="text/JavaScript"></script>
+    <script src="js/globalVar.js"></script>
+    <script src="js/Restaurant_FE.js"></script>
+
+</head>
+
+<body>
+        <!-- Header -->
+    <div w3-include-html="./master/Header.html"></div>
+
+    <div class="container" style="margin-top:30px">
+        <div class="row">
+          <div class="col-sm-5">
+            <h2>About Us</h2><br>
+            <p>EATEVERYWHERE connects people with great local businesses.
+                Our users have contributed reviews of almost every type of local business from restaurants of all type of
+                cuisine. Our business revolves around the connections made between the consumers who read and write
+                reviews and the local businesses that they describe. EATEVERYWHERE was founded in Singapore in December 2020.</p>
+            <hr class="d-sm-none">
+          </div>
+          <div class="col-sm-7">
+            <div class="fakeimg"><img src="./img/aboutus.jpg"></div>
+            </div>
+        </div>
+      </div>
+
+
+    <!-- Footer -->
+    <div w3-include-html="./master/Footer.html"></div>
+
+</body>
+
+<!-- w3 Javascript -->
+<script src="js/w3.js"></script>
+<script>
+    w3.includeHTML(loadUserbarFunction);
+</script>
+
+</html>

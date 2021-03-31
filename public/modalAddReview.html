@@ -1,0 +1,41 @@
+<div class="modal fade" id="modalAddReview">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-light text-center">
+                <h3 class="modal-title text-dark">Contribute a Review</h3>
+                <button type="button" class="btn btn-white" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body px-5">
+                <form id="AddReviewForm">
+                    <div class="row" text-center id="commentBody">
+                        <label for="Username">Username</label>
+                        <input type="text" id="AddReviewUsername" class="form-control" >
+                        <label for="userReview">Review</label>
+                        <textarea id="userReview" required class="form-control form-rounded" rows="3" cols="100%"></textarea>
+                    </div>
+                    <div class="row" id="rating" style="margin: 20px 0px 20px 0px !important;">
+                        <label for="star">Rate Restaurant</label>&nbsp;
+                        <img src="img/star.png" class="popStar" value="1" onmouseover="rateStar(this)" style="height: 20px; width: 20px;" />&nbsp;
+                        <img src="img/star.png" class="popStar" value="2" onmouseover="rateStar(this)" style="height: 20px; width: 20px;" />&nbsp;
+                        <img src="img/star.png" class="popStar" value="3" onmouseover="rateStar(this)" style="height: 20px; width: 20px;"/>&nbsp;
+                        <img src="img/star.png" class="popStar" value="4" onmouseover="rateStar(this)" style="height: 20px; width: 20px;"/>&nbsp;
+                        <img src="img/star.png" class="popStar" value="5" onmouseover="rateStar(this)" style="height: 20px; width: 20px;" />&nbsp;
+                    </div>
+                    <div class="row" id="price" style="margin: 20px 0px 20px 0px !important">
+                        <label for="dollar">Rate Price</label>&nbsp;
+                        <img src="img/dollar.png" class="popDollar" value="1" onmouseover="rateDollar(this)" style="height: 20px; width: 15px;"/>&nbsp;
+                        <img src="img/dollar.png" class="popDollar" value="2" onmouseover="rateDollar(this)" style="height: 20px; width: 15px;"/>&nbsp;
+                        <img src="img/dollar.png" class="popDollar" value="3" onmouseover="rateDollar(this)" style="height: 20px; width: 15px;"/>&nbsp;
+                        <img src="img/dollar.png" class="popDollar" value="4" onmouseover="rateDollar(this)" style="height: 20px; width: 15px;"/>&nbsp;
+                        <img src="img/dollar.png" class="popDollar" value="5" onmouseover="rateDollar(this)" style="height: 20px; width: 15px;"/>&nbsp;
+                    </div>
+
+                    <div class="modal-footer">
+                         <button type="button" class="btn btn-danger orangebackground" data-dismiss="modal" id="addReview" onClick="addNewReview()">Submit</button>
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

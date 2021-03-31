@@ -1,0 +1,44 @@
+<div class="modal fade" id="modalEditReview">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-light text-center">
+                <h3 class="modal-title text-dark">Edit a Review</h3>
+                <button type="button" class="btn btn-white" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body px-5">
+                <!-- All input to be sent to server, and buttons must be within the 'form' tag -->
+                <form id="FeedbackForm">
+                    <div class="row" text-center id="commentBody">
+                        <label for="Username">Username</label>
+                        <input type="text" id="EditReviewUsername" class="form-control" required>
+                        <label for="userReview">Review</label>
+                        <textarea id="EditReviewUserReview" required class="form-control form-rounded" rows="3" cols="100%"></textarea>
+                    </div>
+                    <div class="row" id="rating" style="margin: 20px 0px 20px 0px !important;">
+                        <label for="star">Rate Restaurant</label>&nbsp;
+                        <img src="img/star.png" class="EditReviewpopStar" value="1" onclick="rateStar(this)" style="height: 20px; width: 20px;" />&nbsp;
+                        <img src="img/star.png" class="EditReviewpopStar" value="2" onclick="rateStar(this)" style="height: 20px; width: 20px;" />&nbsp;
+                        <img src="img/star.png" class="EditReviewpopStar" value="3" onclick="rateStar(this)" style="height: 20px; width: 20px;"/>&nbsp;
+                        <img src="img/star.png" class="EditReviewpopStar" value="4" onclick="rateStar(this)" style="height: 20px; width: 20px;"/>&nbsp;
+                        <img src="img/star.png" class="EditReviewpopStar" value="5" onclick="rateStar(this)" style="height: 20px; width: 20px;" />&nbsp;
+                    </div>
+                    <div class="row" id="price" style="margin: 20px 0px 20px 0px !important">
+                        <label for="dollar">Rate Price</label>&nbsp;
+                        <img src="img/dollar.png" class="EditReviewpopDollar" value="1" onclick="rateDollar(this)" style="height: 20px; width: 15px;"/>&nbsp;
+                        <img src="img/dollar.png" class="EditReviewpopDollar" value="2" onclick="rateDollar(this)" style="height: 20px; width: 15px;"/>&nbsp;
+                        <img src="img/dollar.png" class="EditReviewpopDollar" value="3" onclick="rateDollar(this)" style="height: 20px; width: 15px;"/>&nbsp;
+                        <img src="img/dollar.png" class="EditReviewpopDollar" value="4" onclick="rateDollar(this)" style="height: 20px; width: 15px;"/>&nbsp;
+                        <img src="img/dollar.png" class="EditReviewpopDollar" value="5" onclick="rateDollar(this)" style="height: 20px; width: 15px;"/>&nbsp;
+                    </div>
+
+                    <div class="modal-footer">
+                         <button type="button" class="btn btn-danger orangebackground" item="" data-dismiss="modal" id="loadUpdateComment" onclick="loadUpdateReview(this)">Submit</button>
+                    <button type="button" class="btn btn-danger orangebackground" item="" data-dismiss="modal" id="deleteThisReviewid" onclick="deleteThisReview(this)">Delete</button>
+
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

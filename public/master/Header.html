@@ -1,0 +1,47 @@
+<!-- Header -->
+<nav class="navbar navbar-expand-md navbar-light ">
+    <!-- Brand -->
+    <a href="index.html"><img src="../img/Logo.png"></a>
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- Links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav mr-auto">    
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="AboutUs.html">About Us</a>
+      </li>
+  
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Cusine Type
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="Restaurantlist.html" onclick="listWestern()" id="Western">Western</a>
+          <a class="dropdown-item" href="Restaurantlist.html" onclick="listChinese()" id="Chinese">Chinese</a>
+          <a class="dropdown-item" href="Restaurantlist.html" onclick="listIndian()" id="Indian">Indian</a>
+          <a class="dropdown-item" href="Restaurantlist.html" onclick="listJapanese()" id="Western">Japanese</a>
+        </div>
+      </li>
+
+    </ul>
+
+    <span id="loginBox" ></span>
+    <a id=userbar></a>&nbsp;
+    <a href="#" class="orange" data-toggle="modal" data-target="#modallogin" id="btnLogin">Login |</a>&nbsp;
+    <a href="#" class="orange" data-toggle="modal" data-target="#modalregistration" id="btnRegis">Registration</a>&nbsp;
+
+
+    <form class="form-inline" action="">
+        <input id="searchBox"class="form-control mr-sm-2" href="RestaurantSearch.html" type="text" placeholder="Search by restaurant" onsubmit="saveSearch()">
+        <a class="btn orangebackground btn-danger" href="RestaurantSearch.html" onclick="saveSearch()" ><i class="fas fa-search" href="RestaurantSearch.html" ></i></a>        
+      </form>
+    </div>
+  </nav>
